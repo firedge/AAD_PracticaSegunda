@@ -86,7 +86,8 @@ public class GestorJugador {
     }
 
     public Cursor getCursor(){
-        String join = "select j.*, AVG(p.valoracion) from jugador j left outer join partido p on j._id = p.idjugador group by j._id";
+        String join = "select j.*, AVG(p.valoracion) from jugador j left outer join partido p " +
+                "on j._id = p.idjugador group by j._id order by j.nombre";
         return bd.rawQuery(join, null);
     }
 }

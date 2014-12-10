@@ -4,5 +4,15 @@
     <string name="app_name">AAD_PracticaSegunda</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="ht_nombre">Nombre</string>
+    <string name="ht_telefono">Telefono</string>
+    <string name="ht_fnac">Fecha nacimiento</string>
+    <string name="ht_idjugador">ID jugador</string>
+    <string name="ht_contrincante">Contrincante</string>
+    <string name="ht_valoracion">Valoracion</string>
+    <string name="bt_jug">Alta Jugador</string>
+    <string name="bt_par">Alta Partido</string>
+    <string name="tst_jug">Jugador id = </string>
+    <string name="tst_par">Partido id = </string>
 
 </resources>

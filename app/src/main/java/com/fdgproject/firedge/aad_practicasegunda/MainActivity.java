@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
         telefono = etTelefono.getText().toString();
         Jugador j = new Jugador(nombre, telefono, fecha);
         long id = gj.insert(j);
-        Toast.makeText(this, "Jugador id = " + id, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getResources().getString(R.string.tst_jug) + id, Toast.LENGTH_SHORT).show();
         Cursor c = gj.getCursor();
         adp.changeCursor(c);
     }
@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
             valoracion = Integer.parseInt(etValoracion.getText().toString());
         }catch (Exception ex){}
         long id = gj.insertPartido(idjugador, contrincante, valoracion);
-        Toast.makeText(this, "Partido id = " + id, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getResources().getString(R.string.tst_par) + id, Toast.LENGTH_SHORT).show();
         Cursor c = gj.getCursor();
         adp.changeCursor(c);
     }

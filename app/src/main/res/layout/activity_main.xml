@@ -9,7 +9,7 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:id="@+id/et_nombre"
-        android:hint="Nombre"
+        android:hint="@string/ht_nombre"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_telefono"
         android:layout_toEndOf="@+id/et_nombre"
-        android:hint="Telefono"
+        android:hint="@string/ht_telefono"
         android:layout_alignTop="@+id/et_nombre"
         android:layout_toRightOf="@+id/et_nombre" />
 
@@ -27,13 +27,13 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:id="@+id/et_fnac"
-        android:hint="Fecha nac"
+        android:hint="@string/ht_fnac"
         android:layout_below="@+id/et_nombre" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alta Jugador"
+        android:text="@string/bt_jug"
         android:id="@+id/button"
         android:layout_toEndOf="@+id/et_fnac"
         android:onClick="alta"
@@ -62,7 +62,7 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="ID jugador" />
+        android:hint="@string/ht_idjugador" />
 
     <EditText
         android:layout_width="175dp"
@@ -71,7 +71,7 @@
         android:layout_alignBottom="@+id/et_idjugador"
         android:layout_toRightOf="@+id/et_idjugador"
         android:layout_toEndOf="@+id/et_idjugador"
-        android:hint="Contrincante" />
+        android:hint="@string/ht_contrincante" />
 
     <EditText
         android:layout_width="175dp"
@@ -82,12 +82,12 @@
         android:layout_below="@+id/et_idjugador"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Valoracion" />
+        android:hint="@string/ht_valoracion" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alta Partido"
+        android:text="@string/bt_par"
         android:id="@+id/button2"
         android:layout_alignBottom="@+id/et_valoracion"
         android:layout_alignLeft="@+id/et_contrincante"
